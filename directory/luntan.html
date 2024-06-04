@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太极拳论坛</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .post {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .post-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+            text-decoration: none;
+        }
+        .post-info {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .post-content {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .sidebar {
+            max-width: 250px;
+            margin-left: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            right: 20px;
+            top: 20px;
+        }
+        .sidebar h2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #007bff;
+        }
+        .search-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-input {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .search-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .posts-container {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>太极拳论坛</h1>
+        <div class="main-content">
+            <div class="posts-container">
+                <div class="section">
+                    <h2 class="section-title">太极拳入门</h2>
+                    <div class="post">
+                        <a href="#" class="post-title">入门者请进！有关基础动作的讨论</a>
+                        <p class="post-info">发帖人：张三 | 时间：2024-06-04</p>
+                        <p class="post-content">在这个帖子里，我们可以讨论太极拳的基础动作，分享练习心得和技巧。</p>
+                    </div>
+                    <div class="post">
+                        <a href="#" class="post-title">太极拳套路分享交流专区</a>
+                        <p class="post-info">发帖人：李四 | 时间：2024-06-03</p>
+                        <p class="post-content">这里是太极拳套路的分享与交流专区，欢迎大家分享自己的练习心得和套路演练视频。</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2 class="section-title">太极拳进阶</h2>
+                    <div class="post">
+                        <a href="#" class="post-title">太极拳与身心健康的关系</a>
+                        <p class="post-info">发帖人：王五 | 时间：2024-06-02</p>
+                        <p class="post-content">太极拳不仅是一种武术，更是一种身心健康的锻炼方式，让我们来分享太极拳对身心健康的积极影响。</p>
+                    </div>
+                    <div class="post">
+                        <a href="#" class="post-title">分享一些经典太极拳视频教程</a>
+                        <p class="post-info">发帖人：赵六 | 时间：2024-06-01</p>
+                        <p class="post-content">这里可以分享一些经典的太极拳视频教程，供大家学习参考。</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <h2 class="section-title">太极拳文化</h2>
+                    <div class="post">
+                        <a href="#" class="post-title">太极拳与道家文化的内在联系</a>
+                        <p class="post-info">发帖人：钱七 | 时间：2024-05-31</p>
+                        <p class="post-content">太极拳源于中国传统文化，与道家哲学有着深刻的内在联系，让我们一起探讨这种联系。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="搜索论坛内容">
+                    <button class="search-btn">搜索</button>
+                </div>
+                <h2>热门话题</h2>
+                <ul>
+                    <li><a href="#">太极拳的历史渊源</a></li>
+                    <li><a href="#">太极拳的养生功效</a></li>
+                    <li><a href="#">太极拳与其他武术的区别</a></li>
+                    <li><a href="#">如何选择适合自己的太极拳</a></li>
+                    <li><a href="#">太极拳练习中的常见错误</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
