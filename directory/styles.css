@@ -1,0 +1,92 @@
+/* styles.css */
+
+.background{
+    background-size: cover;
+    background-image:url("body-background.png")
+
+}
+.body-model {
+    margin: auto;
+    width: 33%;
+    position: 30px;
+}
+
+.joint {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.joint:hover::after {
+    content: attr(title); 
+    position: absolute;
+    top: 25px;
+    left: 0%;
+    transform: translateX(0%);
+    background-color: #f0f0f0;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
+#leftshoulder {
+    top: 130px;
+    left: 660px;
+}
+
+#rightshoulder {
+    top: 130px;
+    left: 820px;
+}
+
+#leftelbow {
+    top: 245px;
+    left: 590px;
+}
+#rightelbow{
+    top: 245px;
+    left:890px;
+}
+
+#wrist {
+    top: 320px;
+    left: 530px;
+}
+
+#hip {
+    top: 295px;
+    left: 790px;
+}
+
+#knee {
+    top: 550px;
+    left: 690px;
+}
+
+#ankle {
+    top: 700px;
+    left: 700px;
+}
+
+  
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#video-player {
+    width: 100%;
+    height: 100%;
+}

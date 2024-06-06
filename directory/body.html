@@ -1,0 +1,56 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 2D Human Body Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="body-model">
+            <img src="body-model.png" alt="2D Human Body Model">
+            <div class="joint" id="leftshoulder" data-video="leftshoulder.mp4"
+             title="可练习太极拳的第二节，帮助缓解肩部的紧张和疼痛。建议一周练习两到三次，
+             以达到较好的效果。点击查看视频">肩</div>
+
+            <div class="joint" id="rightshoulder" data-video="rightshoulder.mp4"
+            title="肩部常见穴位有：肩井穴、肩髎穴、肩外俞穴、肩中俞穴、肩髃穴等。">肩
+            </div>
+
+            <div class="joint" id="leftelbow" data-video="elbow-video.mp4"title="肘部常见穴位有：左曲泽穴，曲池穴，
+            尺泽穴等。点击查看视频">肘
+            </div>
+
+            <div class="joint" id="rightelbow" data-video="elbow-video.mp4"title="肘部常见穴位有：左曲泽穴，曲池穴，尺泽穴等。
+            练习太极拳的第五节，即「白鹤亮翅」有助于缓解肘部的不适和增加关节灵活性">肘
+            </div>
+
+            <div class="joint" id="wrist" data-video="wrist-video.mp4"
+            title="手腕部位常见的穴位有内关穴、外关穴、阳池穴、神门穴、鱼际穴，选择练习第四节《左右搂膝拗步》">腕
+            </div>
+
+            <div class="joint" id="hip" data-video="hip-video.mp4"
+            title="常见的有命门穴、肾俞穴、腰阳关穴、关元穴、气海穴、中脘穴、水道穴、天枢穴建议练习太极拳的第七节《单鞭》">腰
+            </div>
+
+            <div class="joint" id="knee" data-video="knee-video.mp4"
+            title="在膝关节上有血海、梁丘、膝阳关、曲泉等穴，可以练习第三节，强膝关节的灵活性和稳定性">膝
+            </div>
+
+            <div class="joint" id="ankle" data-video="ankle-video.mp4"
+            title="脚踝穴位主要有解溪穴、丘墟穴、昆仑穴。可以锻炼第二节，帮助提高脚踝的力量和平衡能力">踝
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="video-container">
+        <video id="video-player" width="640" height="480" controls></video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
